@@ -19,8 +19,9 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 20px 100px 20px 100px;
-    width: 100%;
+    padding: 20px 0px;
+    width: 1120px;
+    flex-wrap: wrap;
 }
 
 .footer {
@@ -28,40 +29,63 @@ body {
     justify-content: center;
     align-content: center;
     margin-top: auto;
+    color: #e5e7eb;
+    font-size: 18px;
+    flex-wrap: wrap;
+    padding: 40px;
 }
+.container {
+    display: flex;
+    width: 1120px;
+    height: auto;
+    min-width: 500px;
+    flex: 1 1 initial;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .hero, .info, .cards, .call {
     display: flex;
-    height: 20%;
-    flex: 1;
+    height: auto;
+    flex: 1 1 initial;
 }
 
 .hero {
     display: flex;
     justify-content: center;
-    gap: 30px;
     padding-bottom: 50px;
     flex-wrap: wrap;
+    flex: 1;
 }
 
 .hero-content {
     display: flex;
-    gap: 5px;
+    gap: 10px;
     flex-direction: column;
     align-items: flex-start;
+    margin: 20px 0px;
+    flex: 1;
 }
 
 .hero-content h1 {
+    width: 350px;
+    display: flex;
     color: #f9faf8;
     font-size: 48px;
     font-weight: bolder;
     margin: 0;
+    flex-wrap: wrap;
+    flex: 1;
 }
 
 .hero-content p {
+    width: 350px;
     display: flex;
+    flex-wrap: wrap;
     color: #e5e7eb;
     margin: 0;
     font-size: 18px;
+    flex: 1;
 }
 
 .hero-content button {
@@ -69,10 +93,12 @@ body {
 }
 
 .hero-image {
-    width: 300px;
-    height: 150px;
+    display: flex;
+    width: 700px;
+    height: auto;
     background-color: grey;
-    border-radius: 5px;
+    border-radius: 15px;
+    flex: 1 1 initial;
 }
 
 .logo {
@@ -108,40 +134,83 @@ button, .action {
     border-radius: 8px;
 }
 
-.action h3 {
+.message-container {
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.message-container h3, .message-container p {
     color: #e5e7eb;
+    margin: 0px;
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .action button {
     border: 2px solid #e5e7eb;
 }
 
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+    padding: 15px;
+}
+
 .card {
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
     border-radius: 15px;
-    border: 5px solid #3882f6;
+    border: 2px solid #3882f6;
 }
 
 .cards {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 103px;
     padding: 20px;
+}
+.card-text {
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .call {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 25px;
+    padding: 40px;
+}
+
+.message-container {
+    display: flex;
+    flex-direction: column;
 }
 
 button {
     color: #e5e7eb;
+    width: 125px;
+    height: auto;
     border-radius: 8px;
     padding: 8px;
-    width: 75px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 blockquote {
@@ -151,9 +220,10 @@ blockquote {
     width: inherit;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    margin: 0px;
     justify-content: center;
     align-items: center;
-    padding: 20px 33%;
+    padding: 75px 33%;
     font-size: 36px;
     font-style: italic;
     font-weight: lighter;
