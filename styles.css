@@ -177,14 +177,21 @@ button {
     align-items: center;
     padding: 75px 33%;
     font-size: 36px;
-    font-style: italic;
-    font-weight: lighter;
-    color: #1f2937;
     flex: 1 1 20%;
 }
 
 .quote p{
     width: 1120px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1f2937;
+}
+
+.name {
+    display: flex;
+    width: 1120px;
+    justify-content: flex-end;
+    font-weight: bold;
 }
 
 /* call container */
